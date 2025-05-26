@@ -1,4 +1,7 @@
 package com.ceyentra.online_store_REST_API.repositories;
 
-public interface UserRepository {
+import com.ceyentra.online_store_REST_API.entities.User;
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserRepository extends CrudRepository<User, Long> {
 }

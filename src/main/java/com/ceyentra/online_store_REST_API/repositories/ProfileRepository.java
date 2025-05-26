@@ -1,4 +1,7 @@
 package com.ceyentra.online_store_REST_API.repositories;
 
-public interface ProfileRepository {
+import com.ceyentra.online_store_REST_API.entities.Profile;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProfileRepository extends CrudRepository<Profile, Long> {
 }
